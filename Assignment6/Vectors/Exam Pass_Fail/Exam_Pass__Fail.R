@@ -1,7 +1,0 @@
-scores <- c(75, 82, 60, 95, 40)
-
-if (all(scores >= 60)){
-  print("All students passed")
-}else if (any(nums < 60)){
-  print("At least one student failed")
-}
