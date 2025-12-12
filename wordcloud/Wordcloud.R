@@ -29,11 +29,11 @@ str(df)
 head(df, 10)
 # Interpretation of the results:
 # The top words show that customers are most concerned with 
-  # service, staff, and the restaurant experience.
-  # Frequent mentions of “process,” “slow,” and “line” indicate that 
-  # speed and efficiency are major issues. 
-  # Overall, feedback suggests that improving service flow and maintaining 
-  # attentive staff are key priorities for customer satisfaction.
+# service, staff, and the restaurant experience.
+# Frequent mentions of “process,” “slow,” and “line” indicate that 
+# speed and efficiency are major issues. 
+# Overall, feedback suggests that improving service flow and maintaining 
+# attentive staff are key priorities for customer satisfaction.
 
 
 
@@ -43,13 +43,13 @@ png("wordcloud_exam.png", width = 800, height = 600)
 set.seed(112605)
 
 wordcloud(
-    words = df$word,
-    freq = df$freq,
-    min.freq = 2,
-    max.words = 1000,
-    random.order = FALSE,
-    rot.per = 0.35,
-    colors = brewer.pal(8, "Dark2")
+  words = df$word,
+  freq = df$freq,
+  min.freq = 2,
+  max.words = 1000,
+  random.order = FALSE,
+  rot.per = 0.35,
+  colors = brewer.pal(8, "Dark2")
 )
 dev.off()
 
@@ -65,13 +65,13 @@ png("wordcloud_rare.png", width = 800, height = 600)
 set.seed(1000)
 
 wordcloud(
-    words = df_rare$word,
-    freq = df_rare$freq,
-    min.freq = 1,
-    max.words = 1000,
-    random.order = FALSE,
-    rot.per = 0.35,
-    colors = brewer.pal(8, "Dark2")
+  words = df_rare$word,
+  freq = df_rare$freq,
+  min.freq = 1,
+  max.words = 1000,
+  random.order = FALSE,
+  rot.per = 0.35,
+  colors = brewer.pal(8, "Dark2")
 )
 
 dev.off()
